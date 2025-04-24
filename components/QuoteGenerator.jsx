@@ -39,7 +39,6 @@ export default function QuoteGenerator() {
       
       if (!quoteResponse.ok) throw new Error('Failed to fetch quote');
       const quoteData = await quoteResponse.json();
-      console.log('Quote Response:', quoteData);
       if (bgUrl) {
         const img = new Image();
         setBgUrl(bgUrl)
